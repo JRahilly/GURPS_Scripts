@@ -1,5 +1,6 @@
 # *** Imports *** #
 import Functions as F
+import os
 
 # *** Classes *** #
 class Alien(): # Defines a new alien species
@@ -838,13 +839,18 @@ class Alien(): # Defines a new alien species
 # *** Functions *** #
 def main():
     entries = 1000
+    counter = 0
     print('Starting Alien Creation...')
     for i in range(1, entries + 1, 1):
         alien = Alien()
+        # if alien.strength <= 100:
+            # counter += 1
         alien.attributes()
         print('\n')
     print('Finished Alien Creation...')
     print('{} Entries Created...'.format(entries))
+    # print('{} Entries with Strength >= 100'.format(counter))
+    # print('{} Percent of Total Entries'.format(counter / entries * 100))
 
 
 # *** Main *** #
