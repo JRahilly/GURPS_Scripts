@@ -843,10 +843,9 @@ def main():
     print('Starting Alien Creation...')
     for i in range(1, entries + 1, 1):
         alien = Alien()
-        # if alien.strength <= 100:
-            # counter += 1
-        alien.attributes()
-        print('\n')
+        if alien.chemicalBasis == 'Machine Life':
+            alien.attributes()
+            print('\n')
     print('Finished Alien Creation...')
     print('{} Entries Created...'.format(entries))
     # print('{} Entries with Strength >= 100'.format(counter))
